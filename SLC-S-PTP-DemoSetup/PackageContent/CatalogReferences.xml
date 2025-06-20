@@ -1,0 +1,14 @@
+<CatalogReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.skyline.be/catalogReferences">
+	<CatalogReference id="ae750d4e-50b1-489d-b948-1abe1af591dd">
+		<Name>Generic Switch</Name>
+		<Selection>
+			<Specific>9100.0.0.12</Specific>
+		</Selection>
+	</CatalogReference>
+	<!--<CatalogReference id="c5b2be4c-ecc2-4b59-a274-038bed39274f"> todo: still needs to be released/merged in the main branch
+		<Name>Generic Edge Chassis</Name>
+		<Selection>
+			<Specific>9100.0.0.7</Specific>
+		</Selection>
+	</CatalogReference>-->
+</CatalogReferences>
