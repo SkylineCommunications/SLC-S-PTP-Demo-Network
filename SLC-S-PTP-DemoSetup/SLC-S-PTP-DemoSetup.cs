@@ -98,10 +98,10 @@ internal class Script
 		["NY-GM-01"] = null,
 		["TYO-GM-01"] = null,
 
-		// Transparent Clocks (parent = upstream GM)
-		["NY TC-01"] = "NY-GM-01",
-		["LA TC-01"] = "NY-GM-01",
-		["TYO TC-01"] = "TYO-GM-01",
+		// Transparent Clocks (parent = upstream connected switch)
+		["NY TC-01"] = "NY SW-L01",
+		["LA TC-01"] = "LA SW[BLUE]-L01",
+		["TYO TC-01"] = "TYO SW[BLUE]-L01",
 
 		// NYC Core BCs (direct to NY-GM-01)
 		["NY SW-L01"] = "NY-GM-01",
@@ -775,6 +775,18 @@ new ElementConfig("TYO TC-01", new Dictionary<int, object>(tcBaseConfig)
 		connections.Add(new Connection("OB SW[RED]-S01", "Ethernet 3", "OB SW-L01", "Ethernet 2"));
 		connections.Add(new Connection("OB SW[RED]-S01", "Ethernet 4", "OB SW-L02", "Ethernet 2"));
 
+		// Inter-region BC links: NYC core BCs to LA access BCs
+		connections.Add(new Connection("NY SW-L01", "Ethernet 10", "LA SW[BLUE]-L01", "Ethernet 10"));
+		connections.Add(new Connection("NY SW-L01", "Ethernet 11", "LA SW[BLUE]-L02", "Ethernet 10"));
+		connections.Add(new Connection("NY SW-L01", "Ethernet 12", "LA SW[BLUE]-L03", "Ethernet 10"));
+		connections.Add(new Connection("NY SW-L02", "Ethernet 10", "LA SW[RED]-L01", "Ethernet 10"));
+		connections.Add(new Connection("NY SW-L02", "Ethernet 11", "LA SW[RED]-L02", "Ethernet 10"));
+		connections.Add(new Connection("NY SW-L02", "Ethernet 12", "LA SW[RED]-L03", "Ethernet 10"));
+
+		// LA access BCs to OB edge BCs
+		connections.Add(new Connection("LA SW[BLUE]-L01", "Ethernet 11", "OB SW-L01", "Ethernet 10"));
+		connections.Add(new Connection("LA SW[BLUE]-L02", "Ethernet 11", "OB SW-L02", "Ethernet 10"));
+
 		return connections;
 	}
 
@@ -885,6 +897,8 @@ new ElementConfig("TYO TC-01", new Dictionary<int, object>(tcBaseConfig)
 					engine.GenerateInformation($"Warning: Interface lookup failed");
 					return;
 				}
+
+				GetConnectionNames();
 
 				if (!Exists(engine))
 				{
