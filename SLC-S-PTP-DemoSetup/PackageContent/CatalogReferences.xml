@@ -2,13 +2,13 @@
 	<CatalogReference id="ae750d4e-50b1-489d-b948-1abe1af591dd">
 		<Name>Generic Switch</Name>
 		<Selection>
-			<Specific>9100.0.0.12</Specific>
+			<Specific>9100.0.0.13</Specific>
 		</Selection>
 	</CatalogReference>
-	<!--<CatalogReference id="c5b2be4c-ecc2-4b59-a274-038bed39274f"> todo: still needs to be released/merged in the main branch
+	<CatalogReference id="c5b2be4c-ecc2-4b59-a274-038bed39274f">
 		<Name>Generic Edge Chassis</Name>
 		<Selection>
-			<Specific>9100.0.0.7</Specific>
+			<Specific>9100.0.0.8</Specific>
 		</Selection>
-	</CatalogReference>-->
+	</CatalogReference>
 </CatalogReferences>
