@@ -23,12 +23,7 @@ The solution automatically sets up a complete multi-domain PTP clock topology sp
 ## Prerequisites
 
 - **DataMiner**: Version 10.3.0.0 or higher
-- **Protocols**:
-
-  - `Generic Switch` (Production version)
-  - `Generic Edge Chassis` (Production version)
-
-- **Dependencies**: `Skyline PTP` connector and `SLC-S-PTP` solution (recommended to visualize and monitor the demo environment)
+- **Dependencies**: None. The `SLC-S-PTP` standard solution is recommended to visualize and monitor the demo environment, but it can be installed either before or after this demo package.
 
 ## Technical Reference
 
