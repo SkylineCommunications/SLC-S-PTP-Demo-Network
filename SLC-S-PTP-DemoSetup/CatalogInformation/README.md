@@ -24,11 +24,12 @@ The solution automatically sets up a complete multi-domain PTP clock topology sp
 
 - **DataMiner**: Version 10.3.0.0 or higher
 - **Protocols**:
+
   - `Generic Switch` (Production version)
   - `Generic Edge Chassis` (Production version)
+
 - **Dependencies**: `Skyline PTP` connector and `SLC-S-PTP` solution (recommended to visualize and monitor the demo environment)
 
 ## Technical Reference
 
-- [PTP Standard Solution Documentation](https://docs.dataminer.services/solutions/standard_solutions/PTP/SolPTP.html)
-- [Contacting DataMiner Support](https://aka.dataminer.services/contacting-tech-support)
+- [PTP Standard Solution Documentation](https://aka.dataminer.services/PTPHelp)
