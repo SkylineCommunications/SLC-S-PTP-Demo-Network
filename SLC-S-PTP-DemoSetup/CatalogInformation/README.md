@@ -27,5 +27,4 @@ The solution automatically sets up a complete multi-domain PTP clock topology sp
 
 ## Technical Reference
 
-- [PTP Standard Solution Documentation](https://docs.dataminer.services/solutions/standard_solutions/PTP/SolPTP.html)
-- [Contacting DataMiner Support](https://aka.dataminer.services/contacting-tech-support)
+- [PTP Standard Solution Documentation](https://aka.dataminer.services/PTPHelp)
