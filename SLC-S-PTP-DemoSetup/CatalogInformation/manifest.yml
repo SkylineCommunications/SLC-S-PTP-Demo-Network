@@ -16,7 +16,7 @@
 #   - System Health: If the Catalog item is intended to monitor the health of a system.
 #   - User-Defined API: If the Catalog item is a DataMiner Automation script designed as a user-defined API.
 #   - Visual Overview: If the Catalog item is a Microsoft Visio design.
-type: Custom Solution
+type: Learning & Sample
 id: 93d93dff-c4b6-4e1f-9366-8106d9cafe83
 title: PTP Demo Network Setup
 short_description: Deploys a realistic multi-site PTP simulation network with Grandmasters, Boundary Clocks, Transparent Clocks, and Followers connected via DCF.
